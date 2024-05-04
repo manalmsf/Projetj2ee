@@ -1,7 +1,8 @@
 package com.example.coursonline.servicesImp;
 
 import com.example.coursonline.entites.Commentaire;
-import com.example.coursonline.repositories.CommentaireRepository;
+import com.example.coursonline.repositories.CommentaireRepositorie;
+import com.example.coursonline.repositories.CommentaireRepositorie;
 import com.example.coursonline.services.CommentaireService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -11,7 +12,7 @@ import java.util.List;
 @AllArgsConstructor
 
 public class CommentaireServiceImp implements CommentaireService {
-    private CommentaireRepository commentaireRepository;
+    private CommentaireRepositorie commentaireRepository;
 
 
     @Override

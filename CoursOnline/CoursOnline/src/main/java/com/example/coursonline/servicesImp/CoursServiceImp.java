@@ -1,7 +1,8 @@
 package com.example.coursonline.servicesImp;
 
 import com.example.coursonline.entites.Cours;
-import com.example.coursonline.repositories.CoursRepository;
+import com.example.coursonline.repositories.CoursRepositorie;
+import com.example.coursonline.repositories.CoursRepositorie;
 import com.example.coursonline.services.CoursService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -11,7 +12,7 @@ import java.util.List;
 @Service
 
 public class CoursServiceImp implements CoursService {
-    private CoursRepository coursRepository;
+    private CoursRepositorie coursRepository;
     @Override
     public Cours createCours(Cours cours) {
         return coursRepository.save(cours);
