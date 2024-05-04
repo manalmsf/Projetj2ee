@@ -23,7 +23,6 @@ public class Categorie {
     /*
     relation :cours*/
 
-    @OneToMany(mappedBy = "categorie",fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "categorie", fetch = FetchType.LAZY)
     private List<Cours> coursC = new ArrayList<>();
 }
-//salut
