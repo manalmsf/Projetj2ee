@@ -26,3 +26,4 @@ public class Categorie {
     @OneToMany(mappedBy = "categorie",fetch = FetchType.LAZY)
     private List<Cours> coursC = new ArrayList<>();
 }
+//salut
