@@ -9,11 +9,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
-@CrossOrigin(origins = "*", maxAge = 3600)
 @Controller
 public class SuivreCoursController {
     private SuivreCoursService suivreCoursService;
-    @RequestMapping("createSuivreCours")
+    @RequestMapping("/createSuivreCours")
     public String createSuivreCours(){
         return"CreateSuivreCours";
     }
@@ -23,7 +22,7 @@ public class SuivreCoursController {
         return "CreateSuivreCours";
     }
 
-    @RequestMapping("/ saveSeanceList")
+    @RequestMapping("/saveSuivreCoursList")
     public String SuivreCoursList(ModelMap modelMap){
         List<SuivreCours> suivreCoursController =suivreCoursService.getAllSuivreCours();
         modelMap.addAttribute("SuivreCoursVue",suivreCoursController);

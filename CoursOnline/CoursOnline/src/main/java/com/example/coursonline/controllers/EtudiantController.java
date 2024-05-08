@@ -44,7 +44,7 @@ public class EtudiantController {
     public String editEtudiant(@RequestParam("id") Long id ,  ModelMap modelMap){
         Etudiant etudiantController = etudiantService.getEtudiantById(id);
         modelMap.addAttribute("etudiantView",etudiantController);
-        return "EditEtudiant";
+        return "EtudiantList";
 
     }
 

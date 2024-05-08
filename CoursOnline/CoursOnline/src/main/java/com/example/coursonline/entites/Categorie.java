@@ -22,7 +22,6 @@ public class Categorie {
     private String description;
     /*
     relation :cours*/
-
     @OneToMany(mappedBy = "categorie", fetch = FetchType.LAZY)
     private List<Cours> coursC = new ArrayList<>();
 }

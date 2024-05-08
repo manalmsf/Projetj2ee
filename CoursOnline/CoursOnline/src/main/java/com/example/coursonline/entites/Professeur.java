@@ -17,7 +17,7 @@ public class Professeur {
     private Long id_Prof;
     private String nom;
     private String prenom;
-    private Number Phone;
+    private double Phone;
     private String specialite;
     /*
     relation :

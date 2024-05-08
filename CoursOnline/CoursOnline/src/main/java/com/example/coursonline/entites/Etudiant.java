@@ -21,7 +21,7 @@ public class Etudiant {
     private String nom;
     private String prenom;
     private String email;
-    private Number phone;
+    private double phone;
     /*  suivre
      commentaire */
     @OneToMany (mappedBy = "etudiantC" , fetch = FetchType.LAZY)
