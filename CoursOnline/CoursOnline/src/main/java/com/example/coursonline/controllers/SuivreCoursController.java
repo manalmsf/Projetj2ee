@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
-//@CrossOrigin(origins = "*", maxAge = 3600)
+
 @Controller
 public class SuivreCoursController {
     private SuivreCoursService suivreCoursService;
-    @RequestMapping("createSuivreCours")
+    @RequestMapping("/createSuivreCours")
     public String createSuivreCours(){
         return"CreateSuivreCours";
     }
