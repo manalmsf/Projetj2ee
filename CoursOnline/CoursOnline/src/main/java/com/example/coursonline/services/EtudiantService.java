@@ -1,6 +1,7 @@
 package com.example.coursonline.services;
 
 import com.example.coursonline.entites.Etudiant;
+import com.example.coursonline.entites.Professeur;
 
 import java.util.List;
 

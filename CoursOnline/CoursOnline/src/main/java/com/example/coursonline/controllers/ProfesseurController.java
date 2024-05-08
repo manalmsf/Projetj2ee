@@ -27,7 +27,7 @@ public class ProfesseurController {
         return "CreateProfesseur";
 
     }
-    @RequestMapping("/ProfesseurList")
+    @RequestMapping("/professeurList")
     public String ProfesseurList(ModelMap model) {
         List<Professeur>professeurs=professeurService.getAllProfesseur();
         model.addAttribute("Profview", professeurs);

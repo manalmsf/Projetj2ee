@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
-@CrossOrigin(origins = "*", maxAge = 3600)
+//@CrossOrigin(origins = "*", maxAge = 3600)
 
 @Controller
 @AllArgsConstructor
@@ -40,8 +40,8 @@ public class EtudiantController {
         modelMap.addAttribute("etudiantVue", etudiantsController);
         return "EtudiantList";*/
     }
-    @RequestMapping("/editEtudiant")
-    public String editEtudiant(@RequestParam("id") Long id ,  ModelMap modelMap){
+    @RequestMapping("/etudiantList")
+    public String updateEtudiant(@RequestParam("id") Long id ,  ModelMap modelMap){
         Etudiant etudiantController = etudiantService.getEtudiantById(id);
         modelMap.addAttribute("etudiantView",etudiantController);
         return "EtudiantList";
